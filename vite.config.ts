@@ -10,7 +10,7 @@ export default defineConfig(({mode}) => {
       federation({
         name: 'host-app',
         remotes: {
-          remote: mode === 'development' ? 'http://localhost:5001/assets/remoteEntry.js' : 'https://vite-federation-remote-test.vercel.app/',
+          remote: mode === 'development' ? 'http://localhost:5001/assets/remoteEntry.js' : 'https://vite-federation-remote-test.vercel.app/assets/remoteEntry.js',
         },
         shared: ['react', 'react-dom']
       })
